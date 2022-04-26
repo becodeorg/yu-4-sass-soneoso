@@ -21,6 +21,8 @@ body {
   box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
 }
 
+$varpadding: 16px;
+
   article {
     display: flex;
     flex-wrap: wrap;
@@ -30,7 +32,7 @@ body {
       flex-grow: 1;
       flex-basis: 45%;
       border: 1px silver solid;
-      padding: 16px;
+      padding: $varpadding;
       margin: 16px;
       clear: both;
       overflow: auto;
@@ -55,7 +57,7 @@ body {
       margin-bottom: 1.6em;
       max-width: 100%;
       overflow: auto;
-      padding: 16px;
+      padding: $varpadding;
       display: block;
       white-space: pre-wrap;
 
@@ -84,7 +86,7 @@ body {
   h6 {
     text-align: center;
     font-size: 2em;
-    padding: 32px;
+    padding: $varpadding*2;
     margin-bottom: 0px;
   }
 
@@ -93,7 +95,7 @@ body {
   .error,
   .warning {
     border: 1px solid #ccc;
-    padding: 16px;
+    padding: $varpadding;
     margin: 16px;
     color: #2748b3;
     background-color: #000;
