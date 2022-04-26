@@ -7,17 +7,29 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Learning to work with SASS</title>
-
+    
     <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet" />
 
-    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link id="pagestyle" href="style.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
     <header>
         <h1>Learning to work with SASS</h1>
     </header>
+        <section>
+            <nav>
+                <button id="blue" onclick="swapStyleSheet('style.css')">blue</button>
+                <button id="red" onclick="swapStyleSheet('red.css')">red</button>
 
+                <script>
+                    function swapStyleSheet(sheet){
+                        document.getElementById('pagestyle').setAttribute('href', sheet);
+                        console.log(sheet);
+                    }
+                </script>
+            </nav>
+        </section>
     <article>
         <section id="selling-points">
             <h2>
