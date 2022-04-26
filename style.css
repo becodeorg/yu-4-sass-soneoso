@@ -85,10 +85,7 @@ body h6 {
   margin-bottom: 0px;
 }
 
-body .message,
-body .success,
-body .error,
-body .warning {
+body .message, body .success, body .error, body .warning {
   border: 1px solid #ccc;
   padding: 16px;
   margin: 16px;
