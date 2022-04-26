@@ -15,7 +15,11 @@ body {
   background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
   background-attachment: fixed;
-
+@mixin box-shadow-styling {
+  -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+  box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+}
 
   article {
     display: flex;
@@ -26,15 +30,14 @@ body {
       flex-grow: 1;
       flex-basis: 45%;
       border: 1px silver solid;
-      -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-      -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-      box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
       padding: 16px;
       margin: 16px;
       clear: both;
       overflow: auto;
       box-sizing: border-box;
-
+      @include box-shadow-styling;
+        
+      
 
       &#selling-points {
         flex-grow: 2;
@@ -107,4 +110,5 @@ body {
   .warning {
     background-color: orange;
   }
+
 }
